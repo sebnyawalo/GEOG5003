@@ -111,20 +111,11 @@ def update(frame_number):
     matplotlib.pyplot.ylim(0, 99)
     matplotlib.pyplot.imshow(environment)
 
-    if random.random() < 0.1:
-        carry_on = False
-        print("stopping condition")
+   
 
     for i in range(num_of_agents):
         matplotlib.pyplot.scatter(agents[i]._x,agents[i]._y)
 
-# stopping condition
-def gen_function(b = [0]):
-    a = 0
-    global carry_on #Not actually needed as we're not assigning, but clearer
-    while (a < 10) & (carry_on) :
-        yield a			# Returns control and waits next call.
-        a = a + 1
 
 def run():
     # animate
@@ -141,7 +132,7 @@ canvas._tkcanvas.pack(side=tkinter.TOP, fill=tkinter.BOTH, expand=1)
 menu_bar = tkinter.Menu(root)   
 root.config(menu=menu_bar)
 model_menu = tkinter.Menu(menu_bar)
-menu_bar.add_cascade(label="Model", menu=model_menu)
+menu_bar.add_cascade(label="File", menu=model_menu)
 model_menu.add_command(label="Run model", command=run)
 
 tkinter.mainloop() # keep the gui window open untill interuption

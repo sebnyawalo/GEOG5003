@@ -61,7 +61,7 @@ class Agent:
                self.store = ave
                agent.store = ave
             #   check whether the function is working
-               print("sharing " + str(dist) + " " + str(ave))
+##               print("sharing " + str(dist) + " " + str(ave))
             
         
     
