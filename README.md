@@ -1,11 +1,11 @@
 # GEOG5003
-Agent Based Modelling Agent Based Modelling is, in some senses, the culmination of the methods we've looked at so far. It integrates crime and environmental data, along with behavioural and demographic data about offenders and victims to create a platform which can be used for both predictive estimation and theoretical studies. Agent Based Models aim to provide a in silico lab, where we can:
+This is an ABM model which takes in the following parameters
 
-Capture our understanding of systems.
-Test that understanding of the systems for coherence and comprehensiveness.
-See how theory at the individual level creates aggregate patterns.
-Validate that theory against real data at the aggregate and individual scale.
-Make predictions about the system.s
-Test "what if?" scenarios to inform planning
+  .num_of_agents # defines the number of agents
+  .num_of_iterations # defines the number of iterations
+  .neighbourhood # defines the maximum distance within which agents can interact with one another
+  
+The model takes in data from a web-page containing x,y and Z values to create agents. additionally the model also reads data from an external file containing 2D list simulating an enviroment. an enviroment represent 2D space where the agents can interact with other agents and other elements in that space. in this model agents can move freely, "eat", modify and share there resources with other agents provided that they are within the neighborhood.
+
 
 ![Capture](https://user-images.githubusercontent.com/63342826/80732195-a6aa3200-8b14-11ea-9370-f1c8dfbc9bf6.PNG)
