@@ -50,16 +50,18 @@ class Agent:
         if self.environment[self._y][self._x] > 10:
             self.environment[self._y][self._x] -= 10
             self.store += 10
-
-    def share_with_neighbours(self, neighbourhood):
-        for agent in self.agents:            
-            distance = self.distance_between(agent)
-            if distance <= neighbourhood:            
-                average = (self.store + agent.store)/2                
-                self.store = average
-                agent.store = average
-
-    
+    def share_with_neighbours(self,neighbourhood):
+        for agent in self.agents:
+           dist = self.distance_between(agent)
+           if dist <= neighbourhood:
+            #    print("self store " + str(self.store))
+            #    print("agent store " + str(agent.store))
+               sum = self.store + agent.store
+               ave = sum/2
+               self.store = ave
+               agent.store = ave
+            #   check whether the function is working
+               print("sharing " + str(dist) + " " + str(ave))
             
         
     
