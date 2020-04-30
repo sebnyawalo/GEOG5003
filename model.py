@@ -28,6 +28,7 @@ ax = fig.add_axes([0, 0, 1, 1])
 # get the web page 
 r = requests.get('https://www.geog.leeds.ac.uk/courses/computing/practicals/python/agent-framework/part9/data.html',\
      verify= False)
+
 # grab the webpage content 
 content = r.text
 # pass the content DOM as python object for proccessing
@@ -36,7 +37,6 @@ soup = bs4.BeautifulSoup(content, 'html.parser')
 td_ys = soup.find_all(attrs={"class" : "y"})
 td_xs = soup.find_all(attrs={"class" : "x"})
 
-''' -----------------I/O  read in data-------------- '''
 # read image data into envitonment list
 with open('in.txt', mode='r') as csv_file:
     file_reader = csv.reader(csv_file, delimiter=",")
@@ -55,7 +55,7 @@ with open("environment_output.txt", "w") as f:
         f.write("\n")
 
 # compute the distance between the agents
-# # Ecludian distance is the distance between two points in Euclidean space
+# Eucledian distance is the distance between two points in Euclidean space
 # """ If the points A(x1,y1) and B(x2,y2) are in 2-dimensional space,
 #  then the Euclidean distance between them is |AB| = √ ((x2-x1)^2 + (y2-y1)^2)"""
 
@@ -71,7 +71,7 @@ for agents_row_a in agents:
         # create a new distance list : dist_between_agents
         dist = distance_between(agents_row_a,agents_row_b)
         # append all the distances into this list
-        # then we use the max fucntion to find the max value of the list
+        # then we use the max function to find the max value of the list
         dist_between_agents.append(dist)
 
 # Make agents.
@@ -135,4 +135,4 @@ model_menu = tkinter.Menu(menu_bar)
 menu_bar.add_cascade(label="File", menu=model_menu)
 model_menu.add_command(label="Run model", command=run)
 
-tkinter.mainloop() # keep the gui window open untill interuption
+tkinter.mainloop() # keep the gui window open until interuption
