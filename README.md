@@ -1,4 +1,4 @@
-# ADM_Models
+# ABM_Models
 Agent Based Modelling Agent Based Modelling is, in some senses, the culmination of the methods we've looked at so far. It integrates crime and environmental data, along with behavioural and demographic data about offenders and victims to create a platform which can be used for both predictive estimation and theoretical studies. Agent Based Models aim to provide a in silico lab, where we can:
 
 Capture our understanding of systems.
