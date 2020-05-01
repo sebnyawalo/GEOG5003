@@ -12,23 +12,18 @@ The model, when successfully executed, results into a Graphical User Interface s
 
 Project Structure:
 
-Agent Framework.py  - this is agent class which defines the agents behaviours through move, eat and share data methods.
-
-Model.py - defines the model  and  its functions for executing different components of the model.
-
-.gitattributes - gives attributes to pathnames in the model.
-
-Capture.PNG - A sample screenshot of an animated canvas resulting from the agents interactions.
-
-LICENSE - repository license permiting open source capablities for its use, change and distribution by other users
-
-README.md - description of project structure and functionality
-
-environment.output.txt - 
+> Agent Framework.py  - this is agent class which defines the agents behaviours through move, eat and share data methods.
+> Model.py - defines the model  and  its functions for executing different components of the model.
+> .gitattributes - gives attributes to pathnames in the model.
+> Capture.PNG - A sample screenshot of an animated canvas resulting from the agents interactions.
+> LICENSE - repository license permiting open source capablities for its use, change and distribution by other users
+> README.md - description of project structure and functionality
+> environment.output.txt - a 2D list respresnting the agents interaction space
+> in.txt - contains raster data with values equivalent to image pixels
 
 To run the model, execute model.py from console. Once the file has loaded, enter the values of the number of agents, the number of iterations and the number of Neighbour’s.
 
-Once the model had been execute, it will display a GUI, from the file menu click run model
+Once the model has been executed, it will display a GUI. from the file menu click run model
 This will display an animated canvas as shown below.
 
 
