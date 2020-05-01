@@ -14,11 +14,17 @@ Project Structure:
 
 Agent Framework.py  - this is agent class which defines the agents behaviours through move, eat and share data methods.
 
-Model.py - defines the model  and  its functions for executing different components of the model
+Model.py - defines the model  and  its functions for executing different components of the model.
 
-.gitattributes - gives attributes to pathnames in the model
+.gitattributes - gives attributes to pathnames in the model.
 
-Capture.PNG - A sample screenshot of the resulting agents interaction output
+Capture.PNG - A sample screenshot of an animated canvas resulting from the agents interactions.
+
+LICENSE - repository license permiting open source capablities for its use, change and distribution by other users
+
+README.md - description of project structure and functionality
+
+environment.output.txt - 
 
 To run the model, execute model.py from console. Once the file has loaded, enter the values of the number of agents, the number of iterations and the number of Neighbour’s.
 
