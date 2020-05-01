@@ -14,6 +14,14 @@ Projec structure:
 
 Agent Framework.py  - this is agent class which defines the agents behaviours through move, eat and share data methods.
 
-Model.py - defines the model  and the its functions for executing different components of the model
+Model.py - defines the model  and  its functions for executing different components of the model
+
+To run the model, execute model.py from console. Once the file has loaded, enter the values of the number of agents, the number of iterations and the number of Neighbour’s.
+
+Once the model had been execute, it will display a GUI, from the file menu click run model
+This will display an animated canvas as shown below.
+
+
+
 
 ![Capture](https://user-images.githubusercontent.com/63342826/80732195-a6aa3200-8b14-11ea-9370-f1c8dfbc9bf6.PNG)
