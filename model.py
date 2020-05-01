@@ -12,13 +12,46 @@ import bs4
 import agentframework
 import time
 
-# measure the project execution time
+# measure the time it takes to execute the code project execution time
 begin = time.time()
-# global variables
-# enter data from the console
-num_of_agents = int(sys.argv[1])
-num_of_iterations  = int(sys.argv[2])
-neighbourhood = int(sys.argv[3])
+
+# sets out the main GUI window
+root = tkinter.Tk()
+# sets the name of the window 
+root.wm_title("ABM-Model")
+# define the frame to hold the labels and entry boxes
+frame = tkinter.Frame(root, relief=tkinter.RAISED, borderwidth=1)
+# use pack layout Geometry to place the frame on the main window
+frame.pack(fill=tkinter.BOTH, expand=True)
+#  define the entry boxes, sets default values
+txt1 = tkinter.Entry(frame)
+txt1.insert(0, "10")
+# use the get() method to get the value of the entry boxes
+num_of_agents = int(txt1.get())
+
+txt1.pack(side=tkinter.RIGHT,padx=5, pady=5)
+
+Lab3 = tkinter.Label(frame, text="neighbourhood")
+Lab3.pack(side=tkinter.LEFT,padx=5, pady=5)
+
+txt2 =tkinter.Entry(frame) 
+txt2.pack(side=tkinter.LEFT,padx=5, pady=5)
+txt2.insert(0, "12")
+neighbourhood = int(txt2.get())
+
+Lab2 =tkinter.Label(frame,text="Iterations") 
+Lab2.pack(side=tkinter.LEFT,padx=5, pady=5)
+
+txt3 =tkinter.Entry(frame)
+txt3.pack(side=tkinter.LEFT,padx=5, pady=5)
+txt3.insert(0, "15")
+num_of_iterations = int(txt2.get())
+
+Lab1 =tkinter.Label(frame,text="num_of_agents")
+Lab1.pack(side=tkinter.LEFT,padx=5, pady=5)
+# second frame to hold the canvas
+frame1 = tkinter.Frame(root)
+frame1.pack(side=tkinter.LEFT,fill=tkinter.BOTH)
 
 environment = []
 agents = []
@@ -127,15 +160,19 @@ def run():
     canvas.draw()
 
 
-root = tkinter.Tk()
-root.wm_title("Model")
-canvas = matplotlib.backends.backend_tkagg.FigureCanvasTkAgg(fig, master=root)
-canvas._tkcanvas.pack(side=tkinter.TOP, fill=tkinter.BOTH, expand=1)
+
+# button = tkinter.Button(root,text="neighbours")
+# button.pack(side=tkinter.LEFT)
+canvas = matplotlib.backends.backend_tkagg.FigureCanvasTkAgg(fig, master=frame1)
+canvas._tkcanvas.pack(side=tkinter.BOTTOM, fill=tkinter.NONE, expand=1)
 
 menu_bar = tkinter.Menu(root)   
 root.config(menu=menu_bar)
 model_menu = tkinter.Menu(menu_bar)
 menu_bar.add_cascade(label="File", menu=model_menu)
 model_menu.add_command(label="Run model", command=run)
+
+
+
 
 tkinter.mainloop() # keep the gui window open until interuption
