@@ -10,8 +10,10 @@ import matplotlib.animation
 import csv
 import bs4
 import agentframework
+import time
 
-
+# measure the project execution time
+begin = time.time()
 # global variables
 # enter data from the console
 num_of_agents = int(sys.argv[1])
@@ -117,7 +119,7 @@ def update(frame_number):
     for i in range(num_of_agents):
         matplotlib.pyplot.scatter(agents[i]._x,agents[i]._y)
 
-
+print("--- %s seconds ---" % (time.time() - begin))
 def run():
     # animate
     #animation = matplotlib.animation.FuncAnimation(fig, update, interval=1, repeat=False, frames=num_of_iterations)
