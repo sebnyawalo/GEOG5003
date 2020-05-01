@@ -32,4 +32,4 @@ This will display an animated canvas as shown below.
 
 
 
-![Capture](https://user-images.githubusercontent.com/63342826/80732195-a6aa3200-8b14-11ea-9370-f1c8dfbc9bf6.PNG)
+![Capture](https://user-images.githubusercontent.com/63342826/80825865-e0993800-8be9-11ea-9686-cac6df30f766.PNG)
