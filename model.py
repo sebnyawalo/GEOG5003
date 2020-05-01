@@ -13,9 +13,10 @@ import agentframework
 
 
 # global variables
-num_of_agents = 20
-num_of_iterations = 15
-neighbourhood = 20
+# enter data from the console
+num_of_agents = int(sys.argv[1])
+num_of_iterations  = int(sys.argv[2])
+neighbourhood = int(sys.argv[3])
 
 environment = []
 agents = []
