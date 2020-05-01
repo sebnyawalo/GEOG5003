@@ -26,7 +26,7 @@ __Running the Model:__
 
 To run the model, execute model.py from console. Once the file has loaded, enter the values of the number of agents, the number of iterations and the number of Neighbour’s.
 
-Once the model has been executed, it will display a GUI. from the file menu click run model
+Once the model has been executed, it will display a GUI. From the __File__ menu, click __Run Model__
 This will display an animated canvas as shown below.
 
 
