@@ -10,5 +10,10 @@ The model takes in data from a web-page containing x, y and z values to create t
 
 The model, when successfully executed, results into a Graphical User Interface showing the agents interaction based on a certain number of agents and iterations. An example is as shown below:
 
+Projec structure:
+
+Agent Framework.py  - this is agent class which defines the agents behaviours through move, eat and share data methods.
+
+Model.py - defines the model  and the its functions for executing different components of the model
 
 ![Capture](https://user-images.githubusercontent.com/63342826/80732195-a6aa3200-8b14-11ea-9370-f1c8dfbc9bf6.PNG)
