@@ -16,6 +16,10 @@ Agent Framework.py  - this is agent class which defines the agents behaviours th
 
 Model.py - defines the model  and  its functions for executing different components of the model
 
+.gitattributes - gives attributes to pathnames in the model
+
+Capture.PNG - A sample screenshot of the resulting agents interaction output
+
 To run the model, execute model.py from console. Once the file has loaded, enter the values of the number of agents, the number of iterations and the number of Neighbour’s.
 
 Once the model had been execute, it will display a GUI, from the file menu click run model
