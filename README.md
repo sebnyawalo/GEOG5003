@@ -8,9 +8,9 @@ The agent properties and behaviour are influenced by the following parameters:
 
 The model takes in data from a web-page containing x, y and z values to create the agents for this model. Additionally, the model also reads data from an external file containing a 2D list simulating an enviroment. This enviroment represents 2D space where the agents can interact with other agents and other elements in that space. In this model, agents can move freely, "eat", modify and share their resources with other agents provided that they are within the neighborhood.
 
-The model, when successfully executed, results into a Graphical User Interface showing the agents interaction based on a certain number of agents and iterations. An example is as shown below:
+The model, when successfully executed, results into a Graphical User Interface showing the agents interaction based on a certain number of agents and iterations.
 
-Projec structure:
+Project Structure:
 
 Agent Framework.py  - this is agent class which defines the agents behaviours through move, eat and share data methods.
 
