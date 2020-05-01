@@ -29,7 +29,15 @@ To run the model, execute model.py from console. Once the file has loaded, enter
 Once the model has been executed, it will display a GUI. From the __File__ menu, click __Run Model__.
 This will display an animated canvas as shown below.
 
-
-
+__Outputs:__
+> * Measure code execustion time 
+```
+begin = time.time()
+# code block
+print("--- %s seconds ---" % (time.time() - begin))
+```
+```
+--- 2.1908464431762695 seconds ---
+```
 
 ![Capture](https://user-images.githubusercontent.com/63342826/80825865-e0993800-8be9-11ea-9686-cac6df30f766.PNG)
